@@ -5,6 +5,7 @@ import DataGridQualification from "./components/DataGridQualification";
 // import { makeStyles } from '@material-ui/core/styles';
 // import Button from '@material-ui/core/Button';
 import SimpleModal from "./components/util/SimpleModal";
+import StudentInputReg from "./components/util/StudentInputReg";
 
 function App() {
     // const [displayAllStudents, setDisplayAllStudents] = useState(false);
@@ -50,11 +51,15 @@ function App() {
         {/*    <Button className={useStyles().root} onClick={toggleDisplayQualifications}> Show all qualifications </Button>*/}
         {/*    {listOfQualifications}*/}
         {/*</div>*/}
-        <div>
+
+        <div style={{ width: '100%', left: 300 }}>
             <SimpleModal buttonName={'Show all students'} heading={'All students'} data={listOfStudents} />
         </div>
         <div>
             <SimpleModal buttonName={'Show all qualifications'} heading={'All qualifications'} data={listOfQualifications} />
+        </div>
+        <div>
+            <StudentInputReg />
         </div>
     </div>
   );
